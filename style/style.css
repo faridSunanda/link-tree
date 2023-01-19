@@ -1,0 +1,95 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00DBDE;
+    background-image: linear-gradient(to right, #00DBDE 10%, #FC00FF 100%);
+    background-size: cover;
+    border: 1px solid #000;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profils {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+.profils .logo {
+    border: 4px solid aliceblue;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background-image: url(../img/image.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    box-shadow: 4px 4px 10px #fff, -4px -4px 10px #fff;
+}
+
+.profils .link {
+    border: 2px solid aliceblue;
+    padding: 10px;
+    margin: 40px auto;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    transition: 0.5s;
+}
+
+.profils .link:hover {
+    background-color: aliceblue;
+    color: rgb(88, 86, 86);
+    border: 2px solid rgb(88, 86, 86);
+}
+
+.profils .link i {
+    font-size: 2.5rem;
+}
+
+.profils .icon {
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profils .icon i {
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+.profils .icon i:hover {
+    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 600px) {
+    .profils {
+        width: 60%;
+    }
+}
